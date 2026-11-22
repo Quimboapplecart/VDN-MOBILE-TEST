@@ -227,3 +227,19 @@ html body main.wrap,html body footer.vdn-site-footer,html body .vdn-back-to-top-
  background:#003c2a!important;background-color:#003c2a!important;background-image:none!important;
 }
 </style>
+
+<style id="vdn-test33-desktop-activity-card-layout">
+/* Desktop only: requested 3 / 2 / 2 / 1 card arrangement. Mobile unchanged. */
+@media (min-width:761px) {
+  html body .cards { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); }
+  html body .cards > article.activity { grid-column:span 2; }
+  html body .cards > article.activity:nth-child(1) {order:1;} /* Swimming Pools */
+  html body .cards > article.activity:nth-child(3) {order:2;} /* Basketball */
+  html body .cards > article.activity:nth-child(4) {order:3;} /* Volleyball */
+  html body .cards > article.activity:nth-child(2) {order:4;grid-column:span 3;} /* Beach Relaxation */
+  html body .cards > article.activity:nth-child(5) {order:5;grid-column:span 3;} /* Snorkeling */
+  html body .cards > article.activity:nth-child(6) {order:6;grid-column:span 3;} /* Scenic Coastal Drive */
+  html body .cards > article.activity:nth-child(8) {order:7;grid-column:span 3;} /* Cape Bojeador Lighthouse */
+  html body .cards > article.activity:nth-child(7) {order:8;grid-column:2 / span 4;} /* Waterfall Trek */
+}
+</style>
